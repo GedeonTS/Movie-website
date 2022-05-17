@@ -5,5 +5,5 @@ import movies from './modules/middleSection.js';
 
 const body = document.querySelector('body');
 nav();
-movies()
+movies();
 body.append(footer);
