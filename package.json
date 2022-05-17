@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/GedeonTS/movie-website#readme",
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.17.12",
     "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
     "jest": "^28.1.0",
