@@ -1,12 +1,5 @@
 let arr = [];
 const middleSection = document.getElementById('middle');
-
-// const arrtest = async () => {
-//     await fetchAll()
-//     console.log(arr)
-// }
-
-// arrtest()
 const fetchAll = async () => {
   await fetch('https://api.tvmaze.com/shows?page=1').then((response) => response.json()).then((response) => {
     arr = response;
