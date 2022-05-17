@@ -1,6 +1,6 @@
 import './index.css';
-import footer from './modules/footer';
+import footer from './modules/footer.js';
 
-const body = document.querySelector('body')
+const body = document.querySelector('body');
 
-body.append(footer)
+body.append(footer);
