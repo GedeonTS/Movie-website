@@ -7,7 +7,9 @@ body {
 
 header {
   width: auto;
-  box-shadow: rgba(50, 50, 93, 0.25) 0 30px 60px -12px, rgba(0, 0, 0, 0.3) 0 18px 36px -18px;
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0 18px 36px -18px;
 }
 
 .main-nav {
@@ -34,4 +36,47 @@ a {
 
 .nav-item {
   margin-right: 10px;
+}
+
+#middle {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  animation: mymove 3s infinite;
+}
+
+article {
+  background: rgb(12, 65, 65);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.3rem;
+}
+
+@keyframes mymove {
+  from { background-color: rgba(55, 95, 92, 0.815); }
+  to { background-color: rgb(55, 95, 92); }
+}
+
+article img {
+  height: 65%;
+}
+
+article img:hover {
+  transform: rotate(3deg);
+  transition: all ease-out 1s;
+}
+
+article p {
+  display: none;
+}
+
+article button {
+  background-color: brown;
+  height: 3rem;
+  color: #fff;
+}
+
+article button:hover {
+  background-color: rgb(182, 96, 96);
+  color: #fff;
 }
