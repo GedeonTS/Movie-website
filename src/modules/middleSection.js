@@ -16,7 +16,7 @@ const movies = async () => {
   
   });
   counter.innerText = `[${count}]`;
-  counter.style.color = 'rgb(185, 47, 47)';
+  counter.style.color = 'blue';
 
 
 };
