@@ -10,7 +10,7 @@ const fetchAll = async () => {
 const movies = async () => {
   await fetchAll();
   arr.forEach((movie) => {
-    middleSection.innerHTML += `<article id="${arr.indexOf(movie)}"><img src="${movie.image.medium}"><h5>${movie.name}<h5/><button>comments</button><button>reservations</button><p>${movie.summary}</p></article>`;
+    middleSection.innerHTML += `<article id="${arr.indexOf(movie)}"><img src="${movie.image.medium}" alt="img"><h5>${movie.name}<h5/><button>comments</button><button>reservations</button><p>${movie.summary}</p></article>`;
     count += 1;
   });
   counter.innerText = `[${count}]`;
