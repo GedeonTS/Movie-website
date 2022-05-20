@@ -1,5 +1,4 @@
-import movies from "./modules/middleSection";
-
+import movies from './modules/middleSection.js';
 
 const array1 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
 const array2 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm'];
@@ -16,5 +15,3 @@ describe('Number of movies test', () => {
     expect(movies(array3)).toBe(16);
   });
 });
-
-
