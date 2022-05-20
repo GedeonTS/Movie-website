@@ -67,6 +67,10 @@ article img:hover {
   transition: all ease-out 1s;
 }
 
+p {
+  margin: 0;
+}
+
 article p {
   display: none;
 }
@@ -162,7 +166,4 @@ h5 {
   padding: 15px;
   font-size: 1.3em;
   color: #fff;
-}
-p {
-  margin: 0;
 }
