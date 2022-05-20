@@ -17,7 +17,8 @@ const closePopupModal = () => {
   });
 };
 
-const showCommentModal = () => {
+const showCommentModal = async () => {
+  let arr =await fetchAll();
   const commentBtns = document.querySelectorAll('.comment-btn');
   commentBtns.forEach((commentBtn) => {
     commentBtn.addEventListener('click', () => {
@@ -55,7 +56,6 @@ const showCommentModal = () => {
 
 const movies = async () => {
   let arr = await fetchAll();
-  console.log(arr)
   arr.slice(0, 20).forEach((movie, i) => {
     fetchLikes().then(res => {
       currentValue = res;
@@ -80,6 +80,7 @@ const movies = async () => {
         <p>${movie.summary}</p>
       </article>
     `;
+    showCommentModal();
     })
 
     count += 1;
@@ -88,7 +89,7 @@ const movies = async () => {
  
   counter.innerText = `[${count}]`;
   counter.style.color = 'blue';
-  showCommentModal();
+  
 };
 
 export default movies;
