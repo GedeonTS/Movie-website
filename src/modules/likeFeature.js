@@ -1,27 +1,20 @@
-import fetchAll from "./Fetchall";
-import postLike from "./likesApi";
-
-
+import fetchAll from './Fetchall.js';
+import postLike from './likesApi.js';
 
 const liking = async () => {
-    const allMovies = await fetchAll();
+  const allMovies = await fetchAll();
 
-    const likesBtn = document.querySelectorAll('.likeBtn');
-    let spans =document.querySelectorAll('span')
-    console.log(likesBtn);
-    likesBtn.forEach((a, i) => {
-        let h = spans[i].innerHTML
-        
-        a.addEventListener('click', () => {
-            console.log(allMovies[i].name)
-            postLike(allMovies[i].name)
-        
-        h++;
-        console.log(h);
-        spans[i].innerHTML=h
-  
-      })
-    })
-}
-  
-export default liking
+  const likesBtn = document.querySelectorAll('.likeBtn');
+  const spans = document.querySelectorAll('span');
+  likesBtn.forEach((a, i) => {
+    let h = JSON.parse(spans[i].innerHTML);
+
+    a.addEventListener('click', () => {
+      postLike(allMovies[i].name);
+      h += 1;
+      spans[i].innerHTML = h
+    });
+  });
+};
+
+export default liking;
