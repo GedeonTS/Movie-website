@@ -12,7 +12,7 @@ const liking = async () => {
     a.addEventListener('click', () => {
       postLike(allMovies[i].name);
       h += 1;
-      spans[i].innerHTML = h
+      spans[i].innerHTML = h;
     });
   });
 };
