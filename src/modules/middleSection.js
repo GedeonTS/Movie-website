@@ -1,5 +1,5 @@
-import fetchAll from "./Fetchall";
-import fetchLikes from "./fecthLikes";
+import fetchAll from './Fetchall.js';
+import fetchLikes from './fecthLikes.js';
 
 const commentModal = document.getElementById('commentModal');
 let count = 0;
@@ -67,7 +67,7 @@ const closePopupModal = () => {
 };
 
 const showCommentModal = async () => {
-  let arr =await fetchAll();
+  const arr = await fetchAll();
   const commentBtns = document.querySelectorAll('.comment-btn');
   commentBtns.forEach((commentBtn) => {
     const btnId = commentBtn.getAttribute('id');
@@ -121,12 +121,10 @@ const showCommentModal = async () => {
   });
 };
 
-
-
 const movies = async () => {
-  let arr = await fetchAll();
-  arr.slice(0, 20).forEach((movie, i) => {
-    fetchLikes().then(res => {
+  const arr = await fetchAll();
+  arr.slice(0, 20).forEach((movie) => {
+    fetchLikes().then((res) => {
       currentValue = res;
       let assignLike = 0;
 
@@ -134,9 +132,8 @@ const movies = async () => {
       if (like.length === 0) {
         assignLike = 0;
       } else {
-        assignLike=like[0].likes
+        assignLike = like[0].likes;
       }
-      console.log("likelike", like)
       middleSection.innerHTML += ` 
       <article id="${arr.indexOf(movie)}">
         <img src="${movie.image.medium}" alt="${movie.name}">
@@ -149,16 +146,14 @@ const movies = async () => {
         <p>${movie.summary}</p>
       </article>
     `;
-    showCommentModal();
-    })
+      showCommentModal();
+    });
 
     count += 1;
-
   });
- 
+
   counter.innerText = `[${count}]`;
   counter.style.color = 'blue';
-  
 };
 
 export default movies;
