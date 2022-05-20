@@ -167,3 +167,29 @@ h5 {
   font-size: 1.3em;
   color: #fff;
 }
+
+.likes {
+  display: flex;
+  flex-direction: row;
+  font-size: 0.5rem;
+  margin-top: -4rem;
+}
+
+
+.likes img {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.likes p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top:1rem ;
+  color:#fff;
+}
+
+span {
+  font-size: 12px;
+  margin-right: 4px;
+}
