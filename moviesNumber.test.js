@@ -1,4 +1,4 @@
-import movies from './modules/middleSection.js';
+import movies from './__mocks__/moviesNumber.js';
 
 const array1 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
 const array2 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm'];
