@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "build": "webpack",
-    "start": "webpack serve --open"
+    "start": "webpack serve --open",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -167,6 +168,7 @@
     "get-intrinsic": "^1.1.1",
     "get-package-type": "^0.1.0",
     "get-stream": "^6.0.1",
+    "gh-pages": "^4.0.0",
     "glob": "^7.2.3",
     "glob-parent": "^5.1.2",
     "glob-to-regexp": "^0.4.1",
