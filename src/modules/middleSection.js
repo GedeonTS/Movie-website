@@ -14,8 +14,10 @@ const fetchComments = async (itemId) => {
   try {
     const comments = await fetch(`${invUrl}?item_id=${itemId}`);
     const data = await comments.json();
+    const commentHead = document.querySelector('.comm-header');
+    const commentList = document.querySelector('.comment-list');
     if (data.length > 0) {
-      const commentList = document.querySelector('.comment-list');
+      commentHead.innerHTML = `Comments(${data.length})`;
       commentList.innerHTML = '';
       data.forEach((comm) => {
         const commentItem = `
@@ -24,6 +26,12 @@ const fetchComments = async (itemId) => {
       `;
         commentList.innerHTML += commentItem;
       });
+    } else {
+      commentHead.innerHTML = 'Comments(0)';
+      const noComment = `
+        <span>No comments to show.</span>
+      `;
+      commentList.innerHTML = noComment;
     }
   } catch (err) {
     throw new Error('Request error: ', err);
@@ -92,7 +100,7 @@ const showCommentModal = async () => {
         </div>
 
           <div class="comments">
-            <h3 class="comm-header">Comments</h3>
+            <h3 class="comm-header"></h3>
             <div class="comment-list"></div>
           </div>
 
