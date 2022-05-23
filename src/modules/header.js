@@ -5,6 +5,7 @@ const nav = () => {
   const navElement = `
   <nav class="main-nav">
     <a class="brand" href="#">
+    <img class="humburger" src="https://img.icons8.com/external-febrian-hidayat-flat-febrian-hidayat/64/000000/external-hamburger-ui-essential-febrian-hidayat-flat-febrian-hidayat.png"/>
     <img src="${logo}" class="img-brand" alt="Movie Website logo">
     </a>
     <ul class="nav-items">
