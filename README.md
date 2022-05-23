@@ -74,7 +74,7 @@ Open the project using a live saver extension that can be found into your code e
 
 ## Authors
 
-👤 **GedeonTS**
+👤 **Ushindi Gedeon**
 
 - GitHub: [@GedeonTS](https://github.com/GedeonTS)
 - Twitter: [@Gedeon191](https://twitter.com/Gedeon191)
