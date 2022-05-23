@@ -147,7 +147,7 @@ const movies = async () => {
         <img src="${movie.image.medium}" alt="${movie.name}">
         <h5>${movie.name}<h5/>
         <a class="likes"><img class="likeBtn" src="https://img.icons8.com/material-outlined/24/000000/filled-like.png" >
-          <p><span>${assignLike}</span>likes</p>
+          <p><span id="likes-status">${assignLike}</span>likes</p>
         </a>
         <button class="comment-btn" type="button" id="${arr.indexOf(movie)}">comments</button>
         <button type="button">reservations</button>
