@@ -277,7 +277,6 @@ span {
   cursor: pointer;
 }
 
-
 /* ===============(MEDUIM SCREENS)==================== */
 
 @media screen and (max-width: 1000px) {
@@ -288,8 +287,8 @@ span {
   }
 }
 
-
 /* ===============(SMALL SCREENS)==================== */
+
 @media screen and (max-width: 500px) {
   #middle {
     display: grid;
