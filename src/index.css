@@ -7,6 +7,9 @@ body {
 
 header {
   width: auto;
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
   box-shadow:
     rgba(50, 50, 93, 0.25) 0 30px 60px -12px,
     rgba(0, 0, 0, 0.3) 0 18px 36px -18px;
@@ -22,8 +25,8 @@ header {
 }
 
 .img-brand {
-  width: 100px;
-  height: 80px;
+  width: 2rem;
+  height: 2rem;
   border: 2px solid cadetblue;
   border-radius: 50% 50%;
   margin: 5px 5px;
@@ -33,10 +36,26 @@ header {
 .nav-items {
   display: flex;
   flex-direction: row;
+  width: 25%;
   justify-content: space-between;
   padding: 10px;
   margin: 0 auto;
   list-style: none;
+  margin-right: 0%;
+}
+
+.trending {
+  border:solid 1px red;
+  background-color: lightcoral;
+}
+
+.trending a {
+  color: #fff;
+}
+
+.trending a:hover {
+  font-weight: 700;
+  transition: 0.4s;
 }
 
 a {
@@ -46,10 +65,28 @@ a {
 
 .nav-item {
   margin-right: 10px;
+  padding: 10px;
 }
 
 h1 {
   color: blue;
+  padding-top: 7%;
+  margin-bottom: 0;
+  font-size: 1rem;
+
+}
+
+.search-engine {
+  height: 2rem;
+  width: 20%;
+
+}
+
+.search-btn {
+  height: 2.3rem;
+  border:none;
+  margin-right: 5%;
+
 }
 
 #count {
@@ -285,6 +322,7 @@ span {
     grid-template-columns: 1fr 1fr 1fr;
     animation: mymove 3s infinite;
   }
+
 }
 
 /* ===============(SMALL SCREENS)==================== */
@@ -295,4 +333,27 @@ span {
     grid-template-columns: 1fr;
     animation: mymove 3s infinite;
   }
+
+  .header {
+    /* margin-top: -3%; */
+    position: initial;
+    width: 100%;
+    margin-bottom: -7%;
+  }
+
+  .nav-items {
+    display: none;
+  }
+
+  .search-engine {
+    width: 96%;
+    margin-left: 0;
+  }
+
+  .img-brand {
+    margin-top: 8%;
+    width: 10%;
+    height: 10%;
+  }
+
 }
