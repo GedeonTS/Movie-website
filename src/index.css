@@ -276,3 +276,23 @@ span {
 .sub-comment-btn:hover {
   cursor: pointer;
 }
+
+/* ===============(MEDUIM SCREENS)==================== */
+
+@media screen and (max-width: 1000px) {
+  #middle {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    animation: mymove 3s infinite;
+  }
+}
+
+/* ===============(SMALL SCREENS)==================== */
+
+@media screen and (max-width: 500px) {
+  #middle {
+    display: grid;
+    grid-template-columns: 1fr;
+    animation: mymove 3s infinite;
+  }
+}
