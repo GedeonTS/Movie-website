@@ -54,8 +54,11 @@ a {
 }
 
 .trending {
-  border: solid 1px red;
-  background-color: lightcoral;
+  background-color: rgb(172, 167, 167);
+  border: solid 1px transparent;
+  color: #333;
+  font-weight: 600;
+  border-radius: 0.5rem;
 }
 
 .trending a {
@@ -73,12 +76,12 @@ a {
 
 .trending a:hover {
   color: #fff;
+  
 }
 
 .trending:hover {
-  background-color: rgb(172, 167, 167);
-  border: solid 1px transparent;
-  color: #333;
+  border: solid 1px red;
+  background-color: lightcoral;
 }
 
 h1 {
@@ -116,6 +119,7 @@ article {
   flex-direction: column;
   align-items: center;
   margin: 0.3rem;
+  border-radius: 1rem;
 }
 
 @keyframes mymove {
@@ -125,6 +129,7 @@ article {
 
 article img {
   width: 70%;
+  border-radius: 0.5rem;
   height: 65%;
 }
 
@@ -134,7 +139,7 @@ article img {
 }
 
 article img:hover {
-  transform: rotate(3deg);
+  transform: rotate(1deg);
   transition: all ease-out 1s;
 }
 
@@ -147,13 +152,15 @@ article p {
 }
 
 article button {
-  background-color: brown;
+  background-color: rgba(79, 79, 221, 0.568);
   height: 3rem;
   color: #fff;
+  border-radius: 0.4rem;
+  border:solid transparent;
 }
 
 article button:hover {
-  background-color: rgb(182, 96, 96);
+  background-color: rgba(79, 79, 221, 0.219);
   color: #fff;
 }
 
@@ -322,6 +329,15 @@ span {
 
 .sub-comment-btn:hover {
   cursor: pointer;
+}
+
+footer {
+  height: 10vh;
+  color: white;
+  background-color:#333;
+  font-size: 0.8rem;
+  font-family: 'Times New Roman', Times, serif;
+  padding-top: 3%;
 }
 
 /* ===============(MEDUIM SCREENS)==================== */
