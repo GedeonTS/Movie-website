@@ -111,6 +111,7 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   animation: mymove 3s infinite;
+  padding-bottom: 5%;
 }
 
 article {
@@ -131,6 +132,7 @@ article img {
   width: 70%;
   border-radius: 0.5rem;
   height: 65%;
+  margin-top: 3%;
 }
 
 .likes img {
