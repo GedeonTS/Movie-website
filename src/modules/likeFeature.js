@@ -5,7 +5,7 @@ const liking = async () => {
   const allMovies = await fetchAll();
 
   const likesBtn = document.querySelectorAll('.likeBtn');
-  const spans = document.querySelectorAll('span');
+  const spans = document.querySelectorAll('#likes-status');
   likesBtn.forEach((a, i) => {
     let h = JSON.parse(spans[i].innerHTML);
 
