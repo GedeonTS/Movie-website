@@ -6,7 +6,6 @@ body {
 }
 
 header {
-  width: auto;
   position: fixed;
   background-color: #fff;
   width: 100%;
@@ -35,6 +34,11 @@ header {
   padding: 5px 5px;
 }
 
+a {
+  text-decoration: none;
+  color: teal;
+}
+
 .humburger {
   display: none;
 }
@@ -50,17 +54,12 @@ header {
 }
 
 .trending {
-  border:solid 1px red;
+  border: solid 1px red;
   background-color: lightcoral;
 }
 
 .trending a {
   color: #fff;
-}
-
-a {
-  text-decoration: none;
-  color: teal;
 }
 
 .nav-item {
@@ -87,20 +86,17 @@ h1 {
   padding-top: 7%;
   margin-bottom: 0;
   font-size: 1rem;
-
 }
 
 .search-engine {
   height: 2rem;
   width: 20%;
-
 }
 
 .search-btn {
   height: 2.3rem;
-  border:none;
+  border: none;
   margin-right: 5%;
-
 }
 
 #count {
@@ -336,7 +332,6 @@ span {
     grid-template-columns: 1fr 1fr 1fr;
     animation: mymove 3s infinite;
   }
-
 }
 
 /* ===============(SMALL SCREENS)==================== */
@@ -376,6 +371,4 @@ span {
     width: 80%;
     height: 80%;
   }
-  
-
 }
