@@ -6,7 +6,11 @@ body {
 }
 
 header {
-  width: auto;
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  padding-top: 10%;
+  margin-top: -10%;
   box-shadow:
     rgba(50, 50, 93, 0.25) 0 30px 60px -12px,
     rgba(0, 0, 0, 0.3) 0 18px 36px -18px;
@@ -22,12 +26,21 @@ header {
 }
 
 .img-brand {
-  width: 100px;
-  height: 80px;
+  width: 2rem;
+  height: 2rem;
   border: 2px solid cadetblue;
   border-radius: 50% 50%;
   margin: 5px 5px;
   padding: 5px 5px;
+}
+
+a {
+  text-decoration: none;
+  color: teal;
+}
+
+.humburger {
+  display: none;
 }
 
 .nav-items {
@@ -37,19 +50,55 @@ header {
   padding: 10px;
   margin: 0 auto;
   list-style: none;
+  margin-right: 0%;
 }
 
-a {
-  text-decoration: none;
-  color: teal;
+.trending {
+  background-color: rgb(172, 167, 167);
+  border: solid 1px transparent;
+  color: #333;
+  font-weight: 600;
+  border-radius: 0.5rem;
+}
+
+.trending a {
+  color: #fff;
 }
 
 .nav-item {
   margin-right: 10px;
+  padding: 10px;
+}
+
+.nav-item a:hover {
+  color: red;
+}
+
+.trending a:hover {
+  color: #fff;
+}
+
+.trending:hover {
+  border: solid 1px red;
+  background-color: lightcoral;
 }
 
 h1 {
   color: blue;
+  padding-top: 7%;
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+.search-engine {
+  height: 2rem;
+  width: 20%;
+}
+
+.search-btn {
+  height: 2.3rem;
+  border: none;
+  margin-right: 5%;
 }
 
 #count {
@@ -61,6 +110,7 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   animation: mymove 3s infinite;
+  padding-bottom: 5%;
 }
 
 article {
@@ -69,6 +119,7 @@ article {
   flex-direction: column;
   align-items: center;
   margin: 0.3rem;
+  border-radius: 1rem;
 }
 
 @keyframes mymove {
@@ -78,7 +129,9 @@ article {
 
 article img {
   width: 70%;
+  border-radius: 0.5rem;
   height: 65%;
+  margin-top: 3%;
 }
 
 .likes img {
@@ -87,7 +140,7 @@ article img {
 }
 
 article img:hover {
-  transform: rotate(3deg);
+  transform: rotate(1deg);
   transition: all ease-out 1s;
 }
 
@@ -100,13 +153,15 @@ article p {
 }
 
 article button {
-  background-color: brown;
+  background-color: rgba(79, 79, 221, 0.568);
   height: 3rem;
   color: #fff;
+  border-radius: 0.4rem;
+  border: solid transparent;
 }
 
 article button:hover {
-  background-color: rgb(182, 96, 96);
+  background-color: rgba(79, 79, 221, 0.219);
   color: #fff;
 }
 
@@ -275,4 +330,62 @@ span {
 
 .sub-comment-btn:hover {
   cursor: pointer;
+}
+
+footer {
+  height: 10vh;
+  color: white;
+  background-color: #333;
+  font-size: 0.8rem;
+  font-family: 'Times New Roman', Times, serif;
+  padding-top: 3%;
+}
+
+/* ===============(MEDUIM SCREENS)==================== */
+
+@media screen and (max-width: 1000px) {
+  #middle {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    animation: mymove 3s infinite;
+  }
+}
+
+/* ===============(SMALL SCREENS)==================== */
+
+@media screen and (max-width: 500px) {
+  #middle {
+    display: grid;
+    grid-template-columns: 1fr;
+    animation: mymove 3s infinite;
+  }
+
+  .header {
+    /* margin-top: -3%; */
+    position: initial;
+    width: 100%;
+    margin-bottom: -7%;
+  }
+
+  .nav-items {
+    display: none;
+  }
+
+  .search-engine {
+    width: 46%;
+    margin-left: 10%;
+  }
+
+  .img-brand {
+    margin-top: 8%;
+    width: 10%;
+    height: 10%;
+    display: none;
+  }
+
+  .humburger {
+    display: flex;
+    width: 80%;
+    height: 80%;
+  }
 }
