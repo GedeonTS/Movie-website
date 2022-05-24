@@ -5,9 +5,9 @@
 # Movie-website
 
 ## Description
-   | Desktop Version                                           |
-| --------------------------------------------------------- |
-| ![Screenshot from 2022-05-21 08-24-45](https://user-images.githubusercontent.com/97834160/169639118-c87604e7-725b-4d11-a69a-d9cd30c719ea.png) |
+| Mobile Version                                           | Desktop Version                                           |
+| ---------------------------------------------------------| --------------------------------------------------------- |
+|![Screenshot from 2022-05-24 13-02-49](https://user-images.githubusercontent.com/97834160/170021683-f5101acb-336b-4af3-9b02-8f93d655d71a.png)| ![Screenshot from 2022-05-24 12-11-27](https://user-images.githubusercontent.com/97834160/170021248-aa1ac938-9d22-4ee4-b87a-e4ede03a83a9.png) |
 
 > "Movie-website" is a website which display movies from TVmaze api allowing users to like and comment. It keeps record of the users actions by counting likes and comments, saving them to an external server. We are building this website with Javascript (ES6) and Webpack, using promises and async awaits and multiple apis.
 
@@ -26,8 +26,7 @@ You can have a copy of this repo run on your local machine by just directly clon
 
 ### Live Demo
 
-<!-- Click [here](https://gedeonts.github.io/......./)! -->
-Coming Soon! 🔥
+Click [here](https://gedeonts.github.io/movie-website/)!
 
 ### Prerequisites
 
