@@ -32,7 +32,7 @@ Click [here](https://gedeonts.github.io/movie-website/)!
 
 - Node.js
 - npm
-- vscode(or else)
+- vscode(or another editer)
 
 To get the output of our project make sure you have google Chrome, Mozila or any other browser installed.
 
